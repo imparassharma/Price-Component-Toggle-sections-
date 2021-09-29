@@ -96,13 +96,13 @@ body{
 .section h1{
     font-size: 58px;
     margin-top: 15px;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     color: hsl(232, 13%, 33%);
 }
 
 .section h4{
     color: hsl(233, 13%, 49%);
-    margin-top: -20px;
+    margin-top: 0px;
 }
 
 .section span{
