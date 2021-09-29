@@ -237,3 +237,23 @@ body{
         height: 2.6rem;
     }
 }
+
+@media screen and (min-width:1440px) {
+
+    .section{
+        height: 60vh;
+    }
+
+    .section h1{
+        font-size: 54px;
+    }
+
+    .section2{
+        height: 67vh;
+        width: 22vw;
+    }
+    .section h4{
+        margin-top: -5px;
+    }
+    
+}
