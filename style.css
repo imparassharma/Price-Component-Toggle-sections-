@@ -1,0 +1,239 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(240, 78%, 98%);
+    background-image: url(images/bg-top.svg),url(images/bg-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: top right,bottom left;
+}
+
+.toggle-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.toggle-section h1{
+   color: hsl(233, 13%, 49%);
+   font-size: 28px;
+   margin-bottom: 35px;
+}
+
+.toggle-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.toggle-row p{
+    color: hsl(234, 14%, 74%);
+    font-size: 14px;
+}
+
+.btn{
+    width: 2.8rem;
+    height: 1.6rem;
+    border-radius: 100px;
+    background-image: linear-gradient(hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.circle{
+    display: none;
+    height: 1.1rem;
+    width: 1.1rem;
+    background-color: white;
+    border-radius: 100px;
+    margin-left: 4px;
+}
+
+.circle.active{
+    display: block;
+}
+
+.month-btn{
+    margin-left: 23px;
+}
+
+.main{
+    width: 70vw;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.section{
+    width: 20vw;
+    height: 55vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section h1{
+    font-size: 58px;
+    margin-top: 15px;
+    margin-bottom: 18px;
+    color: hsl(232, 13%, 33%);
+}
+
+.section h4{
+    color: hsl(233, 13%, 49%);
+    margin-top: -20px;
+}
+
+.section span{
+    font-size: 36px;
+    margin-top: -25px;
+    margin-right: 5px;
+
+}
+
+.section hr{
+    border-color: hsl(234, 14%, 74%);
+    width: 15.5rem;
+    opacity: 0.4;
+}
+
+.section p{
+    font-size: 13px;
+    color: hsl(233, 13%, 49%);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.section button{
+    width: 15.5rem;
+    height: 2.4rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+
+.section button:hover{
+    background-image: none;
+    background-color: transparent;
+    color: rgb(122, 79, 223);
+    outline: solid 1px rgb(122, 79, 223);;
+}
+
+.section1{
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.137);
+}
+
+.section2{
+    height: 61vh;
+    background-image: linear-gradient( hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    border-radius: 10px;
+    box-shadow: 1px -1px 5px rgba(0, 0, 0, 0.137);
+}
+
+.section2 h1{
+    color: white;
+}
+
+.section2 hr{
+    border-color: white;
+    opacity: 0.4;
+}
+
+.section2 h4{
+    color: white;
+}
+
+.section2 p{
+    color: white;
+}
+
+.section2 button{
+    background-image: none;
+    color: rgb(122, 79, 223);
+    background-color: white;
+}
+
+.section2 button:hover{
+    background-image: none;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    outline: solid 1px rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.section3{
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.137);
+}
+
+@media screen and (max-width:400px) {
+
+    body{
+        background-image: url(images/bg-top.svg);
+        background-size: 5rem 25rem;
+        background-position: top right;
+    }
+ 
+    .main{
+        width: 90vw;
+        min-height: 100rem;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .toggle-section{
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
+    .section{
+        width: auto;
+        height: 28rem;
+        width: 82vw;
+        margin-bottom: 25px;
+        border-radius: 10px;
+    }
+
+    .section h1{
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    .section p{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .section button{
+        margin-top: 40px;
+        height: 2.6rem;
+    }
+}
